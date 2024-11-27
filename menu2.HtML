@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant | Accueil</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Animations */
+    @keyframes apparition {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Navbar Animation */
+    nav {
+      opacity: 0;
+      animation: apparition 0.6s 0.5s ease-out forwards;
+    }
+    /* Hero Section Animation */
+    header {
+      opacity: 0;
+      animation: apparition 0.6s 0.8s ease-out forwards;
+    }
+    /* About Section Animation */
+    #about {
+      opacity: 0;
+      animation: apparition 0.6s 1s ease-out forwards;
+    }
+    /* Menu Section Animation */
+    #menu {
+      opacity: 0;
+      animation: apparition 0.6s 1.2s ease-out forwards;
+    }
+    /* Contact Section Animation */
+    #contact {
+      opacity: 0;
+      animation: apparition 0.6s 1.4s ease-out forwards;
+    }
+    /* Footer Animation */
+    footer {
+      opacity: 0;
+      animation: apparition 0.6s 1.6s ease-out forwards;
+    }
+  </style>
+</head>
+<body id="bod" class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav id="navv" class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-red-500" id="ah">Mon Restaurant</a>
+      <button class="text-red-500 md:hidden" id="menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <div class="hidden md:flex space-x-6" id="nav-links">
+        <a href="#"  class="hover:text-red-500" id="">Accueil</a>
+        <a href="#about" class="hover:text-red-500">À Propos</a>
+        <a href="#menu" class="hover:text-red-500">Menu</a>
+        <a href="#contact" class="hover:text-red-500">Contact</a>
+        <a href="INDEX2.HTML" class="hover:text-red-500"><span class="fas fa-user-alt"></span></a>
+        <button id="sombre" title="Thème sombre" class="hover:bg-black w-11 h-5 bg-black"></button>
+      </div>
+    </div>
+  <!-- Menu mobile -->
+  <div class="hidden md:hidden" id="mobile-menu">
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-red-500 hover:text-white" id="s">Accueil</a>
+      <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-red-500 hover:text-white" id="s2">À Propos</a>
+      <a href="#menu" class="block px-4 py-2 text-gray-700 hover:bg-red-500 hover:text-white" id="s3">Menu</a>
+      <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-red-500 hover:text-white" id="s4">Contact</a>
+      <a href="INDEX2.HTML" class="block px-4 py-2 text-gray-700 hover:bg-red-500 hover:text-white" id="s5"><span class="fas fa-user-alt"></span></a>
+      <button id="sombre2" title="Thème sombre" class="block px-4 py-2 w-11 h-5 bg-black ml-3 mb-3 "></button>
+      
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('img/plat.jpg');">
+    <div class="bg-black bg-opacity-50 p-10 rounded-lg text-center">
+      <h1 class="text-white text-4xl md:text-6xl font-bold">Bienvenue chez Mon Restaurant</h1>
+      <p class="text-gray-300 mt-4">Cuisine délicieuse et expérience unique</p>
+      <a href="#menu" class="mt-6 inline-block bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600" id="decouvrir">Découvrir le Menu</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">À Propos de Nous</h2>
+      <p class="text-gray-600">Bienvenue chez Délices du Palais, votre destination gourmande pour des saveurs authentiques et raffinées ! Depuis notre création, nous nous engageons à offrir des produits de qualité, préparés avec soin pour satisfaire les palais les plus exigeants. Nous sélectionnons avec passion des ingrédients frais et de première qualité afin de garantir des délices qui éveillent vos sens et enrichissent vos moments de convivialité. Chez Délices du Palais, chaque recette est une invitation au voyage, inspirée de traditions culinaires variées et revisitées avec créativité pour répondre aux goûts modernes. Notre équipe de chefs talentueux et d'artisans passionnés travaille jour après jour pour innover et vous surprendre avec des produits qui allient saveur, authenticité et respect de l'environnement. Nous vous remercions de nous faire confiance et de faire partie de notre aventure culinaire. Que vous soyez à la recherche d’une douceur sucrée, d’une spécialité salée ou d’une expérience gustative unique, Délices du Palais est là pour vous offrir le meilleur de la gastronomie.
+
+
+        Délices du Palais est bien plus qu’une simple entreprise : c’est une aventure culinaire, une quête de perfection gustative et un hommage aux saveurs authentiques. Depuis notre fondation, notre mission est de faire découvrir des produits qui marient tradition et modernité, en créant des expériences gustatives mémorables pour chacun de nos clients. Nous croyons que chaque bouchée doit être un voyage. C’est pourquoi nous sélectionnons méticuleusement des ingrédients de première qualité, issus de sources responsables et privilégiant des producteurs locaux. Cette attention portée aux détails nous permet de vous offrir des produits savoureux, élaborés dans le respect des saisons, de l’environnement, et de l’artisanat culinaire. L’équipe Délices du Palais est composée de passionnés : des artisans, des chefs et des créateurs qui partagent la même vision et l’amour de la bonne cuisine. Chaque jour, nous réinventons des classiques et créons des spécialités inédites qui régalent aussi bien les amateurs de douceur que les amateurs de nouveautés. Notre engagement va bien au-delà de la simple production de délices gourmands. Nous souhaitons instaurer un lien de confiance avec nos clients, en misant sur la transparence, la qualité et la satisfaction. Que ce soit pour un moment de plaisir quotidien, une célébration ou un événement spécial, Délices du Palais s’efforce de rendre chaque instant exceptionnel grâce à des créations culinaires à la fois sublimes et irrésistibles. Nous vous invitons à plonger dans notre univers, où chaque produit est pensé pour éveiller vos sens et ravir votre palais. Chez Délices du Palais, nous croyons que le bonheur commence par les petites choses… et par de grandes saveurs. Vivez une expérience gustative unique avec Délices du Palais et laissez-vous emporter par la magie des saveurs !
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Notre Menu</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Dish 1 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="img/plat.jpg" alt="Plat 1" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold">Plat 1</h3>
+          <p class="text-gray-600 mt-2">Description du plat 1.</p>
+          <span class="text-red-500 font-bold mt-4 block">12€</span>
+        </div>
+        <!-- Dish 2 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="img/frite.jpg" alt="Plat 2" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold">Plat 2</h3>
+          <p class="text-gray-600 mt-2">Description du plat 2.</p>
+          <span class="text-red-500 font-bold mt-4 block">15€</span>
+        </div>
+        <!-- Dish 3 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="img/img.jpg" alt="Plat 3" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold">Plat 3</h3>
+          <p class="text-gray-600 mt-2">Description du plat 3.</p>
+          <span class="text-red-500 font-bold mt-4 block">10€</span>
+        </div>
+
+
+         <!-- Dish 4 -->
+         <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="img/banane.jpg" alt="Plat 3" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold">Plat 4</h3>
+          <p class="text-gray-600 mt-2">Description du plat 4.</p>
+          <span class="text-red-500 font-bold mt-4 block">18€</span>
+        </div>
+
+         <!-- Dish 5-->
+         <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="img/riz.jpg" alt="Plat 3" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold">Plat 5</h3>
+          <p class="text-gray-600 mt-2">Description du plat 5.</p>
+          <span class="text-red-500 font-bold mt-4 block">16€</span>
+        </div>
+
+         <!-- Dish 6 -->
+         <div class="bg-white shadow-md rounded-lg p-6">
+          <img src="img/pnd.jpg" alt="Plat 3" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold">Plat 6</h3>
+          <p class="text-gray-600 mt-2">Description du plat 6.</p>
+          <span class="text-red-500 font-bold mt-4 block">20€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contactez-Nous</h2>
+      <p class="text-gray-600">Vous avez des questions ? N'hésitez pas à nous contacter !</p>
+      <form class="mt-8 space-y-4">
+        <input type="text" placeholder="Votre Nom" class="w-full p-3 rounded-lg border border-gray-300" required>
+        <input type="email" placeholder="Votre Email" class="w-full p-3 rounded-lg border border-gray-300"required>
+        <textarea placeholder="Votre Message" class="w-full p-3 rounded-lg border border-gray-300" rows="4" required></textarea>
+        <button type="submit" class="w-full bg-red-500 text-white p-3 rounded-lg hover:bg-red-600">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Mon Restaurant. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+   <!-- Script pour le menu hamburger -->
+   <script>
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    //selectionner le formulaire et le bouton
+const but1=document.getElementById('sombre');
+const but2=document.getElementById('sombre2');
+
+const body=document.getElementById('about');
+const nav=document.getElementById('navv');
+const mobile=document.getElementById('mobile-menu');
+const menu=document.getElementById('menu');
+const ah=document.getElementById('ah');
+const decouvrir=document.getElementById('decouvrir');
+const s=document.getElementById('s');
+const s2=document.getElementById('s2');
+const s3=document.getElementById('s3');
+const s4=document.getElementById('s4');
+const s5=document.getElementById('s5');
+
+
+//definir le tableau de couleur
+// const colors=['#FF6347','#6A5ACD','#FFD700','#20BDAA','#FF69B4'];
+const colors='#FF6347';
+const color2='#FFD700';
+const color3='#FF69B4';
+
+
+
+
+but1.addEventListener('click',()=>{
+    body.style.backgroundColor=color2;
+    nav.style.backgroundColor='black';
+    nav.style.color='white';
+    ah.style.color=color2;
+    but2.style.backgroundColor='white';
+    decouvrir.style.backgroundColor=color2;
+    menu.style.backgroundColor='black';
+    but1.style.backgroundColor='white';
+    
+});
+but2.addEventListener('click',()=>{
+    body.style.backgroundColor=color2;
+    nav.style.backgroundColor='black';
+    nav.style.color='white';
+    ah.style.color=color2;
+    but2.style.backgroundColor='white';
+    decouvrir.style.backgroundColor=color2;
+    menu.style.backgroundColor='black';
+    s.style.color='white';
+    s2.style.color='white';
+    s3.style.color='white';
+    s4.style.color='white';
+    s5.style.color='white';
+});
+  </script>
+</body>
+</html>
